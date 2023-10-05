@@ -14,7 +14,7 @@ export default function App() {
     // }, []);
 
     return (
-        <div className="container px-[72px]  font-poppins ">
+        <div className="container px-[72px] pt-6  font-poppins ">
             <Header />
             <main className="flex grid-rows-2 mt-9">
                 <section className="homepage flex flex-col gap-6">
@@ -24,7 +24,7 @@ export default function App() {
                     <h1 id="h1" className="font-bold text-5xl font-poppins">
                         Actions for Accessibility in Design
                     </h1>
-                    <h2 className="text-gray-600 text-base">
+                    <h2 className="text-gray-600 text-base font-medium">
                         The fasted way to build and deploy website with reusable
                         components.
                     </h2>
@@ -37,14 +37,24 @@ export default function App() {
                         </button>
                     </div>
                     <div className="checks flex gap-4">
-                        <div>
+                        <div className="flex">
                             <span>
                                 <i className="bx bxs-check-circle"></i>
+                                <img
+                                    src="/Done_ring_round_fill.svg"
+                                    alt="hero image simple homepage"
+                                    className="hero-image text-green-500"
+                                />
                             </span>
                             <p>No credit card required</p>
                         </div>
-                        <div>
-                            <span>
+                        <div className="flex">
+                            <span className="text-green-500">
+                                <img
+                                    src="/Done_ring_round_fill.svg"
+                                    alt="hero image simple homepage"
+                                    className="hero-image text-green-500"
+                                />
                                 <i className="bx bxs-check-circle"></i>
                             </span>
                             <p>No software install</p>
